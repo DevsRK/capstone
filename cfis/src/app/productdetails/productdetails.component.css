@@ -1,0 +1,33 @@
+img{
+    float: left;
+    width: 100%;
+    
+    border-radius: 10%;    
+    margin: 7px;
+    box-shadow: 0 0 8px 0 rgba(0,0,0,0.4), 0 0 10px 0 rgba(0,0,0,0.35);
+       
+}
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+h4 {
+    float: left;
+}
+.col-md-8 p{    
+    text-align: center;
+}
+
+
+
+
+
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }

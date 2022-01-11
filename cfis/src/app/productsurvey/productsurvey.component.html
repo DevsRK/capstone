@@ -1,0 +1,207 @@
+<div class="container">
+  
+  <form [formGroup]="surveyForm" (ngSubmit)="submitSurvey()">
+
+    <fieldset>    
+
+      <legend>Product Survey</legend>    
+
+    
+      <div class="form-group">        
+        <select id="subject" name="subject" class="form-control" required="required" style="width: 300px;">
+          <option value="" disabled selected hidden>Select a Product</option>
+          <option value="iPhone 12 Pro">iPhone 12 Pro</option>
+          <option value="iPhone 12">iPhone 12</option>
+          <option value="Samsung Z fold">Samsung Z fold</option>
+          <option value="OnePlus 8">OnePlus 8</option>          
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label class="col-md-4 control-label" style="color:blue"for="radios">1. Rate your experience using the mobile application.</label>
+        <div class="col-md-4"> 
+          <label class="radio-inline" for="radios-0">
+            <input type="radio" name="radios" id="radios-0" value="1" >
+            Poor
+          </label> <br>
+          <label class="radio-inline" for="radios-1">
+            <input type="radio" name="radios" id="radios-1" value="2">
+            Satisfactory
+          </label> <br>
+          <label class="radio-inline" for="radios-2">
+            <input type="radio" name="radios" id="radios-2" value="3">
+            Good
+          </label> <br>
+          <label class="radio-inline" for="radios-3">
+            <input type="radio" name="radios" id="radios-3" value="4">
+            Excellent
+          </label>
+        </div>
+      </div>
+  
+      <br>  
+      <div class="form-group">
+        <label class="col-md-4 control-label" style="color:blue" for="radios">2. Rate the interface of the mobile application.  </label>
+        <div class="col-md-4"> 
+          <label class="radio-inline" for="radios-0">
+            <input type="radio" name="radios1" id="radios-0" value="1" >
+            Poor
+          </label> <br>
+          <label class="radio-inline" for="radios-1">
+            <input type="radio" name="radios1" id="radios-1" value="2">
+            Satisfactory
+          </label> <br>
+          <label class="radio-inline" for="radios-2">
+            <input type="radio" name="radios1" id="radios-2" value="3">
+            Good
+          </label> <br>
+          <label class="radio-inline" for="radios-3">
+            <input type="radio" name="radios1" id="radios-3" value="4">
+            Excellent
+          </label>
+        </div>
+      </div>
+  
+      <br>  
+      <div class="form-group">
+        <label class="col-md-4 control-label" style="color:blue" for="radios">3. Rate the intuitiveness of the icons. </label>
+        <div class="col-md-4"> 
+          <label class="radio-inline" for="radios-0">
+            <input type="radio" name="radios2" id="radios-0" value="1" >
+            Poor
+          </label> <br>
+          <label class="radio-inline" for="radios-1">
+            <input type="radio" name="radios2" id="radios-1" value="2">
+            Satisfactory
+          </label> <br>
+          <label class="radio-inline" for="radios-2">
+            <input type="radio" name="radios2" id="radios-2" value="3">
+            Good
+          </label> <br>
+          <label class="radio-inline" for="radios-3">
+            <input type="radio" name="radios2" id="radios-3" value="4">
+            Excellent
+          </label>
+        </div>
+      </div>
+  
+      <br> 
+      <div class="form-group">
+        <label class="col-md-4 control-label" style="color:blue" for="radios">4. Rate the loading speed of the mobile application.</label>
+        <div class="col-md-4"> 
+          <label class="radio-inline" for="radios-0">
+            <input type="radio" name="radios3" id="radios-0" value="1" >
+            Very Slow
+          </label><br>
+          <label class="radio-inline" for="radios-1">
+            <input type="radio" name="radios3" id="radios-1" value="2">
+            Slow
+          </label> <br>
+          <label class="radio-inline" for="radios-2">
+            <input type="radio" name="radios3" id="radios-2" value="3">
+            Fast
+          </label> <br>
+          <label class="radio-inline" for="radios-3">
+            <input type="radio" name="radios3" id="radios-3" value="4">
+            Very Fast
+          </label>
+        </div>
+      </div>
+  
+      <br>    
+      <div class="form-group">
+        <label class="col-md-4 control-label" style="color:blue" for="radios">5. How likely are you to recommend [brand/mobile app] to a friend or coworker?   </label>
+        <div class="col-md-4"> 
+          <label class="radio-inline" for="radios-0">
+            <input type="radio" name="radios4" id="radios-0" value="1" >
+            Very Unlikely
+          </label> <br>
+          <label class="radio-inline" for="radios-1">
+            <input type="radio" name="radios4" id="radios-1" value="2">
+            Unlikely
+          </label> <br>
+          <label class="radio-inline" for="radios-2">
+            <input type="radio" name="radios4" id="radios-2" value="3">
+            likely
+          </label> <br>
+          <label class="radio-inline" for="radios-3">
+            <input type="radio" name="radios4" id="radios-3" value="4">
+            Very likely
+          </label>
+        </div>
+      </div>
+  
+      <br>  
+      <div class="form-group">
+        <label class="col-md-4 control-label" style="color:blue" for="radios">6. How likely are you to recommend [mobile app] after [the latest feature update]?	   </label>
+        <div class="col-md-4"> 
+          <label class="radio-inline" for="radios-0">
+            <input type="radio" name="radios5" id="radios-0" value="1" >
+            Very Unlikely
+          </label> <br>
+
+          <label class="radio-inline" for="radios-1">
+            <input type="radio" name="radios5" id="radios-1" value="2">
+            Unlikely
+          </label> <br>
+          <label class="radio-inline" for="radios-2">
+            <input type="radio" name="radios5" id="radios-2" value="3">
+            likely
+          </label> <br>
+          <label class="radio-inline" for="radios-3">
+            <input type="radio" name="radios5" id="radios-3" value="4">
+            Very likely
+          </label> <br>
+        </div>
+      </div>
+  
+      <br>
+      <div class="form-group">
+        <label class="col-md-4 control-label" style="color:blue" for="radios">7. Are there any features that you think you need but are missing in the mobile application? Describe.</label>
+        <textarea class="form-control" id="review" formControlName="review" style="width: 350px;" required minlength="5"></textarea>
+      </div>
+
+      <div class="form-group">
+        <label class="col-md-4 control-label" style="color:blue" for="radios">8. How often would you use it?	   </label>
+        <textarea class="form-control" id="review" formControlName="review" style="width: 350px;" required minlength="5"></textarea>
+      </div>
+
+      <div class="form-group">
+        <label class="col-md-4 control-label" style="color:blue" for="radios">9. What do you think the mobile application should improve on?	</label>
+        <textarea class="form-control" id="review" formControlName="review" style="width: 350px;" required minlength="5"></textarea>
+      </div>
+
+      <div class="form-group">
+        <label class="col-md-4 control-label" style="color:blue" for="radios">10. How is the navigation of the mobile application?	</label>
+        <textarea class="form-control" id="review" formControlName="review" style="width: 350px;" required  minlength="5"></textarea>
+      </div>
+
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="emailAddress" class="form-label">
+            Email:
+        </label>
+        <div>
+            
+            <input class="form-control" style="width: 300px;" id="emailAddress" type="email"
+            formControlName="emailAddress" required minlength="5">
+        </div>
+        
+        <label class="col-md-4 control-label" for="mobileNumber" class="form-label">
+          Contact No:
+        </label> 
+        <div>          
+          <input class="form-control" style="width: 300px;" id="mobileNumber" type="text"
+           formControlName="mobileNumber" required minlength="10">
+        </div>
+      </div>
+  
+      <div class="form-group">
+        <div class="col-md-4">
+          <button id="redirect" name="redirect" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+  
+    </fieldset>
+  </form>
+
+</div>

@@ -1,0 +1,21 @@
+<div class="container mt-5 mb-5">
+      
+    <div class="row">
+      <h3>Get to know the Real Worth of Products </h3>
+      <p>Reviews by People like you</p>      
+    </div>
+    
+    <div class="row">
+        <div class="col-md-3" *ngFor="let product of products">
+            <div class="col">
+                <a  [routerLink]="['/product',product.id]">
+                <img src="{{product.productImg}}"></a>
+                <h1>{{product.productName}}</h1>
+                
+                <!-- <a class="viewbtn" [routerLink]="['/product',product.id]">Read more</a> -->
+
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,27 @@
+<div class="container-fluid">
+    <nav class="main-navigation">
+        
+        <div class="navbar-header animated fadeInUp">
+            <a class="navbar-brand" href="#">ProductReviews.Inc</a>
+        </div>
+        
+        <ul class="nav-list">
+            <li class="nav-list-item">
+                <a routerLink="/home" routerLinkActive="active">Home</a>
+            </li>
+            <li class="nav-list-item">
+                <a routerLink="/productsurvey" routerLinkActive="active">Product Survey</a>
+            </li>
+            <li class="nav-list-item">
+                <a routerLink="/contactus" routerLinkActive="active">Contact Us</a>
+            </li>
+            <li class="nav-list-item" *ngIf='!isLoggedIn'>
+                <a routerLink="/loginpage" routerLinkActive="active">Login</a>
+            </li>
+            <li class="nav-list-item" *ngIf='isLoggedIn'>
+                <a routerLink="/home" (click)='logout()' routerLinkActive="active">Log Out</a>
+            </li>
+        </ul>
+    </nav>  
+</div>
+
